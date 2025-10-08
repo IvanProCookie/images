@@ -94,24 +94,25 @@
         let name = el.name.replace(/\.piskel/,'')
         const newImage = new Image(); newImage.src = `/iphotos/img/${name}.png`;
         newImage.onload = function(){
+          let name = name
           let width = piskel.piskel.width
           let height = piskel.piskel.height
           let imgname = piskel.piskel.name
           let imgwidth = this.width
           let imgheight = this.height
-
           const card = document.createElement('div');
           card.setAttribute('class','card')
           card.setAttribute('id',eli)
           card.innerHTML = `
-<div class="con">
-<a href="/iphotos/img/${name}.png">${name.charAt(0).toUpperCase() + name.slice(1)}</a>:
-<ul class="list">
-<li>Size: ${width} x ${height},</li>
-<li>OG Size: ${imgwidth} x ${imgheight}.</li>
-  </ul>
-  </div><img class="img" src="/iphotos/img/${name}.png" alt="${imgname}"/>
-`;
+          <div class="con">
+            <a href="/iphotos/img/${name}.png">${name.charAt(0).toUpperCase() + name.slice(1)}</a>:
+            <ul class="list">
+              <li>Size: ${width} x ${height},</li>
+              <li>OG Size: ${imgwidth} x ${imgheight}.</li>
+            </ul>
+          </div>
+          <img class="img" src="/iphotos/img/${name}.png" alt="${imgname}" title="${imgname}"/>
+          `;
           document.body.appendChild(card);
         };
         newImage.onerror = function(err){alert('Error loading image:\n'+err)};
