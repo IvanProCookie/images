@@ -94,7 +94,6 @@
         let name = el.name.replace(/\.piskel/,'')
         const newImage = new Image(); newImage.src = `/iphotos/img/${name}.png`;
         newImage.onload = function(){
-          let name = name
           let width = piskel.piskel.width
           let height = piskel.piskel.height
           let imgname = piskel.piskel.name
