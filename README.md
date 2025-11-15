@@ -1,3 +1,6 @@
+For [/app](/app)!!!!
+====================
+
 ## App Name:  
 Text 2 Pixel•Art  
 
@@ -15,7 +18,12 @@ https://studio.code.org/projects/applab/09XllAq0oqv1JKXXJZvSYvPRYIY2De41e5IydZ2g
 ```
 
 ## my-app.zip Name:
-[Text2Pixel-Art.zip](/app/Text2Pixel-Art.zip)  
+[Text2Pixel-Art.zip](/app/Text2Pixel-Art.zip)
 
-------------------------
+## Other:
+All images made by me in [Piskel](https://www.piskelapp.com)! ;3
+
+------
+-------
+
 <marquee>\>(•̀ω•́)\<</marquee>
